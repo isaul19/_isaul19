@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Astro description" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>iSaul19 - Portfolio</title>
+  </head>
+  <body class="bg-c-black text-c-white max-w-6xl mx-auto w-[95%]">
+    <slot />
+  </body>
+</html>
+
+<style is:global>
+  @font-face {
+    font-family: "spacegrotesk";
+    src: url("/fonts/spacegrotesk/700.ttf");
+    font-weight: 700;
+  }
+
+  @font-face {
+    font-family: "spacegrotesk";
+    src: url("/fonts/spacegrotesk/500.ttf");
+    font-weight: 500;
+  }
+
+  body {
+    font-family: "spacegrotesk";
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    /* scroll-behavior: smooth; */
+  }
+
+  .heading-xl {
+    font-family: "spacegrotesk";
+    font-weight: 700;
+    letter-spacing: -2.5px;
+    @apply leading-[66px] text-[66px] md:text-[88px] md:leading-[88px];
+  }
+
+  .heading-l {
+    font-family: "spacegrotesk";
+    font-weight: 700;
+    font-size: 48px;
+    letter-spacing: -1.5px;
+    line-height: 56px;
+  }
+
+  .heading-m {
+    font-family: "spacegrotesk";
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+  }
+</style>
