@@ -32,6 +32,13 @@
     border: 2px solid #333;
   }
 
+  @media screen and (width < 400px) {
+    .circle {
+      width: 350px;
+      height: 350px;
+    }
+  }
+
   .center {
     @apply bg-c-esmerald;
     height: 30px;
@@ -54,6 +61,12 @@
     padding: 8px;
     border-radius: 100%;
     background-color: #333;
+  }
+
+  @media screen and (width < 450px) {
+    .icon {
+      animation: orbit-mobile 18s linear infinite;
+    }
   }
 
   .icon:hover {
@@ -91,6 +104,15 @@
     }
     100% {
       transform: translate(-50%, -50%) rotate(360deg) translateX(200px) rotate(-360deg);
+    }
+  }
+
+  @keyframes orbit-mobile {
+    0% {
+      transform: translate(-50%, -50%) rotate(0deg) translateX(180px) rotate(0deg);
+    }
+    100% {
+      transform: translate(-50%, -50%) rotate(360deg) translateX(180px) rotate(-360deg);
     }
   }
 </style>
